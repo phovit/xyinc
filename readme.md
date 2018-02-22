@@ -22,6 +22,7 @@ server.port=8080
 
 ##Execução da Aplicação
 - Iniciar a execução do banco de dados
+- Compilar o projeto: mvn clean install
 - Em Alguma IDE:
 	Executar o arquivo Boot.java, existente no pacote br.com.xyinc
 - Via Linha de comando
