@@ -9,12 +9,10 @@ public interface PoiService {
 
     List<Poi> list();
 
-    void add(String name, Integer x, Integer y);
+    Poi findById(Long id);
 
     void add(Poi poi);
 
     List<Poi> buscaProximos(Integer x, Integer y, Integer s);
-
-    List<Poi> buscaProximosForEach(Integer x, Integer y, Integer s);
 
 }

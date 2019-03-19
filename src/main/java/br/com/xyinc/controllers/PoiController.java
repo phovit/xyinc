@@ -15,22 +15,18 @@ import java.util.List;
 @RequestMapping("/poi")
 public interface PoiController {
 
-
-    @GetMapping("/list")
+    @GetMapping
     @ResponseBody
     List<Poi> list();
 
-    @GetMapping("/addGet/{name}/{x}/{y}")
-    ResponseEntity<Poi> add(String name, Integer x, Integer y);
+    @GetMapping("/{id}")
+    @ResponseBody
+    Poi findById(Long id);
 
-    @PostMapping("/add")
+    @PostMapping
     ResponseEntity<Poi> add(Poi poi);
 
-    @GetMapping("/buscaProximos/{x}/{y}/{s}")
+    @GetMapping("/proximidade/{x}/{y}/{s}")
     @ResponseBody
     List<Poi> buscaProximos(Integer x, Integer y, Integer s);
-
-    @GetMapping("/buscaProximosForEach/{x}/{y}/{s}")
-    @ResponseBody
-    List<Poi> buscaProximosForEach(Integer x, Integer y, Integer s);
 }
