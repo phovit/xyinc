@@ -22,6 +22,11 @@ server.port=8080
 | POST | /poi | Insere um ponto de interesse, o qual deverá ser enviado no formado JSON no body da requisição. Retorna a url de acesso ao registro criado através do campo "location" da resposta HTTP 
 
 
+Os Serviços também foram brevemente documentados através do swagger, que pode ser conferido na url abaixo:
+https://paulohenriquedeoliveira.herokuapp.com/  ( redireciona para https://paulohenriquedeoliveira.herokuapp.com/swagger-ui.html#/)
+
+A API está diponível em https://paulohenriquedeoliveira.herokuapp.com/poi
+
 <b>Execução da Aplicação:</b>
 
 No diretório raiz do projeto:
