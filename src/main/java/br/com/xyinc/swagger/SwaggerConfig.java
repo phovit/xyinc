@@ -27,7 +27,7 @@ public class SwaggerConfig {
         return new ApiInfoBuilder().title("XYInc")
                 .description("Software de auxilio à localização de pontos de interesse")
                 .version("1.0")
-                .contact(new Contact("Paulo Henrique de Oliveira", "", "paulo.15.paulo@gmail.com"))
+                .contact(new Contact("Paulo Henrique de Oliveira", "https://github.com/phovit/xyinc", "paulo.15.paulo@gmail.com"))
                 .license("Apache License Version 2.0")
                 .licenseUrl("https://www.apache.org/licenses/LICENSE-2.0")
                 .build()
